@@ -1,9 +1,15 @@
 {
   "resources": [
+    {"id":{"name":"Clouds_Sprite","path":"sprites/Clouds_Sprite/Clouds_Sprite.yy",},"order":7,},
     {"id":{"name":"Player_Object","path":"objects/Player_Object/Player_Object.yy",},"order":0,},
     {"id":{"name":"InvisibleWall_Sprite","path":"sprites/InvisibleWall_Sprite/InvisibleWall_Sprite.yy",},"order":1,},
-    {"id":{"name":"Player_Sprite","path":"sprites/Player_Sprite/Player_Sprite.yy",},"order":0,},
+    {"id":{"name":"Walls_Sprite","path":"sprites/Walls_Sprite/Walls_Sprite.yy",},"order":6,},
+    {"id":{"name":"Player_SpriteWalk","path":"sprites/Player_SpriteWalk/Player_SpriteWalk.yy",},"order":5,},
+    {"id":{"name":"Player_Sprite","path":"sprites/Player_Sprite/Player_Sprite.yy",},"order":3,},
+    {"id":{"name":"Player_SpriteJump","path":"sprites/Player_SpriteJump/Player_SpriteJump.yy",},"order":4,},
+    {"id":{"name":"Grain_Sprite","path":"sprites/Grain_Sprite/Grain_Sprite.yy",},"order":8,},
     {"id":{"name":"Wall_Object","path":"objects/Wall_Object/Wall_Object.yy",},"order":1,},
+    {"id":{"name":"Background_Sprite","path":"sprites/Background_Sprite/Background_Sprite.yy",},"order":2,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
