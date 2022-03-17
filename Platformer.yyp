@@ -6,6 +6,7 @@
     {"id":{"name":"Walls_Sprite","path":"sprites/Walls_Sprite/Walls_Sprite.yy",},"order":6,},
     {"id":{"name":"Player_SpriteWalk","path":"sprites/Player_SpriteWalk/Player_SpriteWalk.yy",},"order":5,},
     {"id":{"name":"Player_Sprite","path":"sprites/Player_Sprite/Player_Sprite.yy",},"order":3,},
+    {"id":{"name":"Wall_Tiles","path":"tilesets/Wall_Tiles/Wall_Tiles.yy",},"order":0,},
     {"id":{"name":"Player_SpriteJump","path":"sprites/Player_SpriteJump/Player_SpriteJump.yy",},"order":4,},
     {"id":{"name":"Grain_Sprite","path":"sprites/Grain_Sprite/Grain_Sprite.yy",},"order":8,},
     {"id":{"name":"Wall_Object","path":"objects/Wall_Object/Wall_Object.yy",},"order":1,},
