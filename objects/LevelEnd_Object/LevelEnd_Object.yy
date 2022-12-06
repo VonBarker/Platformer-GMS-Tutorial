@@ -1,13 +1,13 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Wall_Object",
+  "name": "LevelEnd_Object",
   "spriteId": {
-    "name": "InvisibleWall_Sprite",
-    "path": "sprites/InvisibleWall_Sprite/InvisibleWall_Sprite.yy",
+    "name": "LevelEnd_Sprite",
+    "path": "sprites/LevelEnd_Sprite/LevelEnd_Sprite.yy",
   },
   "solid": false,
-  "visible": false,
+  "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
