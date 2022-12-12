@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "objPlayer",
+  "name": "obj_Player",
   "spriteId": {
     "name": "spr_Player",
     "path": "sprites/spr_Player/spr_Player.yy",
