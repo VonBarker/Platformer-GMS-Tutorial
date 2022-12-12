@@ -1,5 +1,10 @@
 switch(room){
-		case rm_LevelOne || rm_LevelTwo:
+		case rm_LevelOne:
+			var c = c_black;
+			draw_text_transformed_color(20, 40, "LIVES: "+ string(lives), 1, 1, 0, c, c, c, c, 1);
+			break;
+			
+		case rm_LevelTwo:
 			var c = c_black;
 			draw_text_transformed_color(20, 40, "LIVES: "+ string(lives), 1, 1, 0, c, c, c, c, 1);
 			break;
