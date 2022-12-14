@@ -12,10 +12,11 @@ switch(room){
 			break;
 		
 		case rm_Start:
-			var c = c_black;
+			var c = c_navy;
 			draw_set_halign(fa_center);
 			draw_set_font(fnt_Title);
 			draw_text_transformed_color(room_width/2, 300, "Platformer", 1, 1, 0, c, c, c, c, 1);
+			var c = c_black;
 			draw_set_font(fnt_Main);
 			draw_text_transformed_color(room_width/2, 400, "PRESS ENTER TO START", 0.75, 0.75, 0, c, c, c, c, 1);
 			draw_set_halign(fa_left);
