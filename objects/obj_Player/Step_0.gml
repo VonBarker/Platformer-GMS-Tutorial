@@ -58,6 +58,14 @@ if (place_meeting(x+hsp,y,obj_Wall))
 	}
 	hsp = 0;
 }
+else if (place_meeting(x+hsp,y,obj_WallNoGrip))
+{
+	while (!place_meeting(x+sign(hsp),y,obj_WallNoGrip))
+	{
+		x = x + sign(hsp);
+	}
+	hsp = 0;
+}
 x = x + hsp;
 
 
