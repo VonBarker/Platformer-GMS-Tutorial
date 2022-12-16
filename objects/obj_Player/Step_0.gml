@@ -1,7 +1,7 @@
 // Inputs
 key_left = keyboard_check(vk_left);
 key_right = keyboard_check(vk_right);
-key_jump = keyboard_check(vk_space);
+key_jump = keyboard_check_pressed(vk_space);
 
 // Movement
 var _move = key_right - key_left;
@@ -10,9 +10,25 @@ hsp = _move * walksp;
 
 vsp = vsp + grv;
 
-if (place_meeting(x,y+1,obj_Wall)) && (key_jump)
+if (place_meeting(x,y+1,obj_Wall))
 {
-	vsp = -jumpsp
+	jumps = jumpsmax;
+	grounded = true;
+}
+else grounded = false;
+
+if(key_jump) && (jumps >= 1) 
+{
+	if(grounded = true)
+	{
+		jumps = jumps - 1;
+		vsp = -jumpsp;
+	}
+	else
+	{
+		jumps = jumps - 1.1;
+		vsp = -jumpsp;
+	}
 }
 
 //Horizontal Collision
