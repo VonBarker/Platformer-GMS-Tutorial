@@ -6,7 +6,10 @@ key_jump = keyboard_check_pressed(vk_space);
 // Movement
 var _move = key_right - key_left;
 
-hsp = _move * walksp;
+if(walljumping = false)
+{
+	hsp = _move * walksp;
+}
 
 vsp = vsp + grv;
 
@@ -31,6 +34,21 @@ if(key_jump) && (jumps >= 1)
 	}
 }
 
+if (key_jump) && (place_meeting(x+1,y,obj_Wall))
+{
+	vsp = -jumpsp;
+	hsp = -4
+	walljumping = true;
+	alarm[0] = 15;
+}
+else if (key_jump) && (place_meeting(x-1,y,obj_Wall))
+{
+	vsp = -jumpsp;
+	hsp = 4
+	walljumping = true;
+	alarm[0] = 15;
+}
+
 //Horizontal Collision
 if (place_meeting(x+hsp,y,obj_Wall))
 {
@@ -41,6 +59,7 @@ if (place_meeting(x+hsp,y,obj_Wall))
 	hsp = 0;
 }
 x = x + hsp;
+
 
 //Vertical Collision
 if (place_meeting(x,y+vsp,obj_Wall))
