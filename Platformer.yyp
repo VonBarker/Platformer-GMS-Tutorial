@@ -13,6 +13,8 @@
     {"id":{"name":"spr_PlayerWalk","path":"sprites/spr_PlayerWalk/spr_PlayerWalk.yy",},"order":5,},
     {"id":{"name":"rm_LevelTwo","path":"rooms/rm_LevelTwo/rm_LevelTwo.yy",},"order":1,},
     {"id":{"name":"spr_Player","path":"sprites/spr_Player/spr_Player.yy",},"order":3,},
+    {"id":{"name":"spr_Enemy","path":"sprites/spr_Enemy/spr_Enemy.yy",},"order":11,},
+    {"id":{"name":"obj_Enemy","path":"objects/obj_Enemy/obj_Enemy.yy",},"order":5,},
     {"id":{"name":"tileset_Wall","path":"tilesets/tileset_Wall/tileset_Wall.yy",},"order":0,},
     {"id":{"name":"fnt_Title","path":"fonts/fnt_Title/fnt_Title.yy",},"order":1,},
     {"id":{"name":"rm_GameOver","path":"rooms/rm_GameOver/rm_GameOver.yy",},"order":4,},
