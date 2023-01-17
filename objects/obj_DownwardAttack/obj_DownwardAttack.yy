@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_Attack",
+  "name": "obj_DownwardAttack",
   "spriteId": {
-    "name": "spr_Attack",
-    "path": "sprites/spr_Attack/spr_Attack.yy",
+    "name": "spr_VerticalAttack",
+    "path": "sprites/spr_VerticalAttack/spr_VerticalAttack.yy",
   },
   "solid": false,
   "visible": true,

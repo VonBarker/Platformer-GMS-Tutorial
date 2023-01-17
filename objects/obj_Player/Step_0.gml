@@ -1,5 +1,7 @@
 // Inputs
+key_up = keyboard_check(ord("W"));
 key_left = keyboard_check(ord("A"));
+key_down = keyboard_check(ord("S"));
 key_right = keyboard_check(ord("D"));
 key_jump = keyboard_check_pressed(vk_space);
 click = mouse_check_button_pressed(mb_left);
@@ -107,7 +109,15 @@ if (hsp != 0)
 }
 
 //Attack
-if(click)
+if(click && key_up)
 {
-	instance_create_layer(x + (32 * image_xscale) + hsp, y + vsp, "Instances", obj_Attack);
+	instance_create_layer(x, y - (sprite_height/2) - 10, "Instances", obj_UpwardAttack);
+}
+else if(click && key_down)
+{
+	instance_create_layer(x, y + (sprite_height/2) + 10, "Instances", obj_DownwardAttack);
+}
+else if(click)
+{
+	instance_create_layer(x + (32 * image_xscale), y, "Instances", obj_HorizontalAttack);
 }
