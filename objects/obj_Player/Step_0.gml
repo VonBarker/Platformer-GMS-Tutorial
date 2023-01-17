@@ -1,7 +1,8 @@
 // Inputs
-key_left = keyboard_check(vk_left);
-key_right = keyboard_check(vk_right);
+key_left = keyboard_check(ord("A"));
+key_right = keyboard_check(ord("D"));
 key_jump = keyboard_check_pressed(vk_space);
+click = mouse_check_button_pressed(mb_left);
 
 // Movement
 var _move = key_right - key_left;
@@ -100,4 +101,13 @@ else
 	}
 }
 
-if (hsp != 0) image_xscale = sign(hsp);
+if (hsp != 0)
+{
+	image_xscale = sign(hsp);
+}
+
+//Attack
+if(click)
+{
+	instance_create_layer(x + (32 * image_xscale), y, "Instances", obj_Attack);
+}
