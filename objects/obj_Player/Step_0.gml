@@ -109,5 +109,5 @@ if (hsp != 0)
 //Attack
 if(click)
 {
-	instance_create_layer(x + (32 * image_xscale), y, "Instances", obj_Attack);
+	instance_create_layer(x + (32 * image_xscale) + hsp, y + vsp, "Instances", obj_Attack);
 }
