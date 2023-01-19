@@ -1,1 +1,2 @@
-lives = 3;
+playerMaxHealth = 3;
+global.playerHealth = playerMaxHealth;

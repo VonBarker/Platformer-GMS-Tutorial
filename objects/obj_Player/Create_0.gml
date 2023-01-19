@@ -9,3 +9,5 @@ jumpsmax = 2;
 walljumping = false;
 
 grounded = false;
+
+invincible = false;
