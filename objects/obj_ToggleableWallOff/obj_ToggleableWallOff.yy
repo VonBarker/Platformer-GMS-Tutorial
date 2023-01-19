@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_TogglableWallOff",
+  "name": "obj_ToggleableWallOff",
   "spriteId": {
     "name": "spr_TogglableWallOff",
     "path": "sprites/spr_TogglableWallOff/spr_TogglableWallOff.yy",

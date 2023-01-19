@@ -16,9 +16,3 @@ if(lives <= 0)
 {
 	room_goto(rm_GameOver);	
 }
-
-if(keyboard_check_pressed(ord("I")))
-{
-	obj_TogglableWallOff.alarm[0] = 1;	
-	obj_TogglableWallOn.alarm[0] = 1;
-}
