@@ -1,3 +1,2 @@
-lives = lives - 1;
-
 room_restart();
+global.playerHealth = obj_Game.playerMaxHealth;
