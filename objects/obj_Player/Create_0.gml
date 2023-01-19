@@ -6,7 +6,7 @@ jumpsp = 10;
 
 jumps = 0;
 jumpsmax = 2;
-walljumping = false;
+controlable = true;
 
 grounded = false;
 

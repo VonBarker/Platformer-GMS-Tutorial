@@ -1,1 +1,1 @@
-walljumping = false;
+controlable = true;

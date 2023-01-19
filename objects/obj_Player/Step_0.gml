@@ -9,7 +9,7 @@ click = mouse_check_button_pressed(mb_left);
 // Movement
 var _move = key_right - key_left;
 
-if(walljumping = false)
+if(controlable = true)
 {
 	hsp = _move * walksp;
 }
@@ -40,15 +40,15 @@ if(key_jump) && (jumps >= 1)
 if (key_jump) && (place_meeting(x+1,y,obj_Wall))
 {
 	vsp = -jumpsp;
-	hsp = -walksp
-	walljumping = true;
+	hsp = -walksp;
+	controlable = false;
 	alarm[0] = 15;
 }
 else if (key_jump) && (place_meeting(x-1,y,obj_Wall))
 {
 	vsp = -jumpsp;
-	hsp = walksp
-	walljumping = true;
+	hsp = walksp;
+	controlable = false;
 	alarm[0] = 15;
 }
 
