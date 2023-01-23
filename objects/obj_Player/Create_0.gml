@@ -5,9 +5,13 @@ walksp = 4;
 jumpsp = 10;
 
 jumps = 0;
-jumpsmax = 2;
+jumpsMax = 2;
+
 controlable = true;
 
 grounded = false;
 
 invincible = false;
+
+weaponCooldown = 15;
+canAttack = true;

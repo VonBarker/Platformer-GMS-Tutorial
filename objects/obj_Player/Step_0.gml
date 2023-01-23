@@ -18,7 +18,7 @@ vsp = vsp + grv;
 
 if (place_meeting(x,y+1,obj_Wall))
 {
-	jumps = jumpsmax;
+	jumps = jumpsMax;
 	grounded = true;
 }
 else grounded = false;
@@ -109,15 +109,21 @@ if (hsp != 0)
 }
 
 //Attack
-if(click && key_up)
+if(click && key_up && canAttack)
 {
 	instance_create_layer(x, y - (sprite_height/2) - 10, "Instances", obj_UpwardAttack);
+	canAttack = false;
+	alarm[2] = weaponCooldown;
 }
-else if(click && key_down)
+else if(click && key_down && canAttack)
 {
 	instance_create_layer(x, y + (sprite_height/2) + 10, "Instances", obj_DownwardAttack);
+	canAttack = false;
+	alarm[2] = weaponCooldown;
 }
-else if(click)
+else if(click && canAttack)
 {
 	instance_create_layer(x + (32 * image_xscale), y, "Instances", obj_HorizontalAttack);
+	canAttack = false;
+	alarm[2] = weaponCooldown;
 }
