@@ -1,4 +1,7 @@
-hsp = dir * walksp;
+if(controlable)
+{
+	hsp = dir * walksp;
+}
 vsp = vsp + grv;
 
 if (place_meeting(x+hsp,y,obj_Wall))
@@ -35,3 +38,9 @@ if (place_meeting(x,y+vsp,obj_Wall))
 	}
 }
 y = y + vsp;
+
+//Health
+if(enemyHp <= 0)
+{
+	instance_destroy();
+}
