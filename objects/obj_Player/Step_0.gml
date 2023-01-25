@@ -23,6 +23,7 @@ if (place_meeting(x,y+1,obj_Wall))
 }
 else grounded = false;
 
+//Double Jump
 if(key_jump) && (jumps >= 1) 
 {
 	if(grounded = true)
@@ -37,19 +38,20 @@ if(key_jump) && (jumps >= 1)
 	}
 }
 
+//Walljump
 if (key_jump) && (place_meeting(x+1,y,obj_Wall))
 {
 	vsp = -jumpsp;
-	hsp = -walksp;
+	hsp = -walksp*1.5;
 	controlable = false;
-	alarm[0] = 15;
+	alarm[0] = 40;
 }
 else if (key_jump) && (place_meeting(x-1,y,obj_Wall))
 {
 	vsp = -jumpsp;
 	hsp = walksp;
 	controlable = false;
-	alarm[0] = 15;
+	alarm[0] = 40;
 }
 
 //Horizontal Collision
