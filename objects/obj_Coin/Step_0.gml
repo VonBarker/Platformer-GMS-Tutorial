@@ -1,6 +1,10 @@
-if(controlable)
+if(bounce > 0)
 {
-	hsp = dir * walksp;
+	hsp = dir * 1.5;
+}
+else
+{
+	hsp = 0;
 }
 vsp = vsp + grv;
 
@@ -31,17 +35,11 @@ if (place_meeting(x,y+vsp,obj_Wall))
 		y = y + sign(vsp);
 	}
 	vsp = 0;
-	
-	if(!position_meeting(x + (sprite_width/2)*dir, y + (sprite_height/2) + 1, obj_Wall))
-	{
-		dir = dir * -1;
-	}
 }
 y = y + vsp;
 
-//Health
-if(enemyHp <= 0)
+if (place_meeting(x,y+vsp,obj_Wall))
 {
-	instance_create_layer(x,y, "Instances", obj_Coin);
-	instance_destroy();
+	vsp = -bounce;
+	bounce = bounce - 1;
 }
