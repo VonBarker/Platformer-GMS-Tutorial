@@ -39,14 +39,14 @@ if(key_jump) && (jumps >= 1)
 }
 
 //Walljump
-if (key_jump) && (place_meeting(x+1,y,obj_Wall))
+if (key_jump) && (place_meeting(x+1,y,obj_Wall)) && (key_right)
 {
 	vsp = -jumpsp;
 	hsp = -walksp*1.5;
 	controlable = false;
 	alarm[0] = 40;
 }
-else if (key_jump) && (place_meeting(x-1,y,obj_Wall))
+else if (key_jump) && (place_meeting(x-1,y,obj_Wall)) && (key_left)
 {
 	vsp = -jumpsp;
 	hsp = walksp;

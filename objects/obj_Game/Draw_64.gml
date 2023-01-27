@@ -16,6 +16,12 @@ switch(room){
 			draw_set_font(fnt_Main);
 			draw_text_transformed_color(20, 40, "HEALTH: "+ string(global.playerHealth), 0.5, 0.5, 0, c, c, c, c, 1);
 			break;
+			
+		case rm_LevelFour:
+			var c = c_black;
+			draw_set_font(fnt_Main);
+			draw_text_transformed_color(20, 40, "HEALTH: "+ string(global.playerHealth), 0.5, 0.5, 0, c, c, c, c, 1);
+			break;
 		
 		case rm_Start:
 			var c = c_navy;
